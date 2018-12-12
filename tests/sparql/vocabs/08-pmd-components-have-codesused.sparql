@@ -7,6 +7,6 @@ WHERE {
   ?ds a qb:DataSet ;
         qb:structure [ qb:component ?comp ] .
  FILTER NOT EXISTS {
-   ?comp pmdq:codeUsed ?used
+   ?comp pmdq:codesUsed ?used
  }
 }
