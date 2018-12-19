@@ -9,6 +9,7 @@ WHERE {
   {
     GRAPH ?graph {
         ?s <http://publishmydata.com/def/qb/codesUsed>/skos:member ?code .
+        FILTER isURI(?code) .
     }
     FILTER NOT EXISTS {
       ?code rdfs:label ?label .
